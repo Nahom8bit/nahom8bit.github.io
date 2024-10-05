@@ -3,208 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nahom Daniel Negash - Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --header-bg: #1e1e1e;
-            --section-bg: #1a1a1a;
-            --accent-color: #bb86fc;
-            --link-color: #03dac6;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-        header {
-            background-color: var(--header-bg);
-            color: var(--text-color);
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 2rem;
-            object-fit: cover;
-            border: 3px solid var(--accent-color);
-        }
-        .header-text {
-            text-align: left;
-        }
-        .header-text h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: var(--accent-color);
-        }
-        .header-text p {
-            margin: 0.5em 0 0;
-            font-size: 1.2em;
-            opacity: 0.8;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        section {
-            background-color: var(--section-bg);
-            margin-bottom: 2rem;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        h2, h3 {
-            color: var(--accent-color);
-        }
-        h2 {
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        #projects ul {
-            list-style-type: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-        #projects li {
-            background-color: var(--header-bg);
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            padding: 1rem;
-            transition: transform 0.3s ease;
-        }
-        #projects li:hover {
-            transform: translateY(-5px);
-        }
-        #projects a {
-            color: var(--link-color);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        #projects a:hover {
-            text-decoration: underline;
-        }
-        #projects p {
-            color: var(--text-color);
-            margin-top: 0.5rem;
-        }
-        a {
-            color: var(--link-color);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Nahom Daniel - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+
     <header>
-        <div class="header-content">
-            <img src="https://github.com/Nahom8bit.png" alt="Nahom Daniel Negash" class="profile-image">
-            <div class="header-text">
-                <h1>Nahom Daniel Negash</h1>
-                <p>Accountant | Software Developer | Creative Designer</p>
-            </div>
-        </div>
+        <nav>
+            <div class="logo">ND</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
+
     <main>
+        <section id="home">
+            <h1>Nahom Daniel</h1>
+            <p>Versatile Professional in 3D Design, Architecture, Software Development, Front-End Development, Data Analysis, and Bookkeeping</p>
+        </section>
+
         <section id="about">
             <h2>About Me</h2>
-            <p>Hi, I'm <strong>Nahom Daniel Negash</strong>, a dedicated and versatile professional with a strong foundation in <strong>accounting</strong>, <strong>software development</strong>, and <strong>creative design</strong>. With experience spanning several industries, I combine technical expertise with business acumen to deliver effective solutions and manage complex operations.</p>
-            
-            <h3>What I Do</h3>
-            
-            <h4>Accounting & Business Management</h4>
-            <p>I currently work at <strong>Admas Commercio LDA</strong> in Angola, where I manage the company's day-to-day operations, including <strong>sales</strong>, <strong>product management</strong>, and <strong>communications</strong>. My role involves making strategic decisions, maintaining financial oversight, and ensuring smooth operations.</p>
-            
-            <h4>Software Development</h4>
-            <p>I'm passionate about <strong>building software solutions</strong> to solve real-world problems. I'm proficient in:</p>
+            <p>I am a multifaceted professional with expertise spanning various domains. My diverse skill set allows me to bridge the gap between creative design and technical implementation, making me a valuable asset in today's digital landscape.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>Python</li>
-                <li>Streamlit</li>
-                <li>PocketBase</li>
-            </ul>
-            <p>I'm currently developing a <strong>Product Management App</strong>, starting with <strong>SQLite</strong> for the database and plans to scale using <strong>Firebase</strong>. My focus is on user-friendly, scalable applications, and I enjoy working on everything from front-end design to back-end logic and database management.</p>
-            
-            <h4>3D Art & Creative Writing</h4>
-            <p>Outside of business and tech, I engage in <strong>3D art</strong> and <strong>writing</strong>, combining creativity with technical precision. These skills allow me to explore projects beyond the typical scope of software, bringing a unique perspective to my work in development and business strategy.</p>
-            
-            <h3>What Sets Me Apart</h3>
-            <ul>
-                <li><strong>Multidisciplinary expertise</strong>: From managing a business to coding software, I take on multiple roles and excel in each.</li>
-                <li><strong>Problem-solving mindset</strong>: Whether it's fixing operational issues or developing a new app feature, I thrive on finding innovative solutions.</li>
-                <li><strong>Leadership under pressure</strong>: Running a company alone has honed my ability to lead, make tough decisions, and maintain focus under stress.</li>
+                <li>3D Design</li>
+                <li>Architecture</li>
+                <li>Software Development</li>
+                <li>Front-End Development</li>
+                <li>Data Analysis</li>
+                <li>Bookkeeping</li>
             </ul>
         </section>
-        
+
         <section id="projects">
             <h2>Projects</h2>
-            <div id="loading" style="display: none;">Loading projects...</div>
-            <ul id="repo-list"></ul>
+            <div id="project-list">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
         </section>
-        
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-posts">
+                <!-- Blog posts will be added here -->
+            </div>
+        </section>
+
         <section id="contact">
             <h2>Contact</h2>
-            <p>GitHub: <a href="https://github.com/Nahom8bit" target="_blank">@Nahom8bit</a></p>
-            <p>Let's connect! If you're interested in my work or have a project in mind, feel free to reach out. Together, we can build something impactful.</p>
+            <form id="contact-form" action="https://formspree.io/f/your_formspree_endpoint" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <ul class="social-links">
+                <li><a href="https://github.com/Nahom8bit/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.artstation.com/nahomryu" target="_blank" aria-label="ArtStation"><i class="fab fa-artstation"></i></a></li>
+                <li><a href="mailto:nahomdaniel.n@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <!-- Add LinkedIn icon when available -->
+            </ul>
         </section>
     </main>
 
-    <script>
-        const username = 'Nahom8bit';
-        const repoList = document.getElementById('repo-list');
-        const loading = document.getElementById('loading');
+    <footer>
+        <p>&copy; 2024 Nahom Daniel. All rights reserved.</p>
+    </footer>
 
-        loading.style.display = 'block';
-
-        fetch(`https://api.github.com/users/${username}/repos?sort=updated&direction=desc`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch repositories');
-                }
-                return response.json();
-            })
-            .then(data => {
-                loading.style.display = 'none';
-                if (data.length === 0) {
-                    repoList.innerHTML = '<li>No public repositories found.</li>';
-                } else {
-                    repoList.innerHTML = '';
-                    data.forEach(repo => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `
-                            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                            <p>${repo.description || 'No description available.'}</p>
-                        `;
-                        repoList.appendChild(li);
-                    });
-                }
-            })
-            .catch(error => {
-                loading.style.display = 'none';
-                console.error('Error fetching repositories:', error);
-                repoList.innerHTML = '<li>Error loading projects. Please try again later.</li>';
-            });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
